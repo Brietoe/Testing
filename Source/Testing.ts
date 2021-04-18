@@ -20,10 +20,7 @@ export default function Testing<FunctionUnderTest extends Mux>(FUT: FunctionUnde
 			{
 				Asserts(testClaim(output)).truthy;
 			},
-			theﾠresult: (testClaim: TestClaim<FunctionUnderTest>) =>
-			{
-				Asserts(testClaim(output)).truthy;
-			}
+			theﾠresult: (testClaim: TestClaim<FunctionUnderTest>) => Asserts(testClaim(output)).truthy
 		};
 		return tester;
 	};
